@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Débuts en JS</title>
+</head>
+<body>
+<h1 id="h1Main">Découverte javascript</h1>
+</body>
+<script>
+    console.log ("Hello!!!");
+    console.info('info')
+    console.error('error')
+    console.warn('warn')
+    document.write('Hello')
+    alert('Attention, je vais te demander quelque chose...')
+    let base = prompt('Quel livret ?')
+    document.write('<h3>Le livret '+base+'</h3>')
+    for (i=1; i<=10; i++) {
+        document.write(i+' x '+base+' = '+i*base+'<br>')
+    }
+    let color = prompt('De quelle couleur le titre ?')
+    h1Main.style.backgroundColor = color
+    document.write('Au bol, je dirais: '+Math.floor(Math.random()*100))
+
+    let board = [
+        [0,0,0,0,0,0,0,0,0,0],
+        [0,0,1,1,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0],
+        [0,1,1,1,1,1,0,0,0,0],
+        [0,0,0,0,0,0,0,1,0,0],
+        [0,0,0,0,0,0,0,1,0,0],
+        [0,1,0,0,0,0,0,1,0,0],
+        [0,1,0,0,0,0,0,1,0,0],
+        [0,1,0,0,0,0,0,0,0,0],
+        [0,0,0,0,0,0,0,0,0,0],
+    ]
+    document.write('<table style="border-collapse: collapse">')
+    for (l=0; l<10; l++) {
+        document.write('<tr>')
+        for (c=0; c<10; c++) {
+            if (board[l][c] == 1)
+                document.write('<td style="width:20px; border: 1px solid black; background-color: black">')
+            else
+                document.write('<td style="width:20px; border: 1px solid black;">')
+            document.write('&nbsp;</td>')
+        }
+        document.write('</tr>')
+    }
+</script>
+</html>
