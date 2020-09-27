@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nombre mystère</title>
+</head>
+<body>
+
+</body>
+<script>
+    number = Math.floor(Math.random()*100) // pick the mistery number
+    attempts = 0 // attempts counter
+    do {
+        attempts++
+        guess = prompt ('Essai '+attempts+':')
+        if (guess > number) {
+            alert ('Trop grand')
+        }
+        if (guess < number) {
+            alert ('Trop petit')
+        }
+    } while (guess != number)
+    alert('Gagné en '+attempts+' essais')
+</script>
+</html>
