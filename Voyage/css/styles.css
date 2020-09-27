@@ -1,0 +1,42 @@
+body {
+    font-family: Arial;
+}
+
+.banner {
+    display: inline-flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.logocontainer {
+    width: 10%;
+    height: 60px;
+    text-align: center;
+    padding: 5px;
+}
+
+.logoimg {
+    height: 50px;
+}
+
+.title {
+    width: 90%;
+    text-align: center;
+}
+
+.nav {
+    display: inline-flex;
+    justify-content: space-evenly;
+    padding: 30px;
+    width:100%;
+    background-image: url("/pictures/Rome-by-night.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.button {
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: white;
+    padding: 15px;
+}
