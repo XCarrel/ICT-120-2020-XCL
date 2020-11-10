@@ -6,6 +6,7 @@
     <title>Voyage Voyage</title>
     <link rel="stylesheet" href="css/styles.css">
     <script src="/js/code.js" defer></script>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
 </head>
 <body>
 <div class="banner">
@@ -122,14 +123,25 @@
         </div>
         <div id="divHousing" class="hidden">
             <h2>Le logement</h2>
-            <table>
-            <tr><th>Hotel</th><td><input type="text" name="txtHotelData[00]" id="txtHotelData00"></td></tr>
-            <tr><th>Adresse</th><td><input type="text" name="txtHotelData[01]" id="txtHotelData01"></td></tr>
-            <tr><th>NPA</th><td><input type="text" name="txtHotelData[02]" id="txtHotelData02"></td></tr>
-            <tr><th>City</th><td><input type="text" name="txtHotelData[03]" id="txtHotelData03"></td></tr>
-            <tr><th>Téléphone</th><td><input type="text" name="txtHotelData[04]" id="txtHotelData04"></td></tr>
-            <tr><th>Email</th><td><input type="text" name="txtHotelData[05]" id="txtHotelData05"></td></tr>
-            </table>
+            <div class="row">
+                <div class="col-6">
+                        <label class="col-3">Hotel</label>
+                        <input type="text" name="txtHotelData[00]" id="txtHotelData00" class="col-5"><br>
+                        <label class="col-3">Adresse</label>
+                        <input type="text" name="txtHotelData[01]" id="txtHotelData01" class="col-5"><br>
+                        <label class="col-3">NPA</label>
+                        <input type="text" name="txtHotelData[02]" id="txtHotelData02" class="col-5"><br>
+                        <label class="col-3">City</label>
+                        <input type="text" name="txtHotelData[03]" id="txtHotelData03" class="col-5"><br>
+                        <label class="col-3">Téléphone</label>
+                        <input type="text" name="txtHotelData[04]" id="txtHotelData04" class="col-5"><br>
+                        <label class="col-3">Email</label>
+                        <input type="text" name="txtHotelData[05]" id="txtHotelData05" class="col-5"><br>
+                </div>
+                <div class="col-4">
+                    <img src="pictures/hotel-none.png" id="imgHotel" alt="Pas d'image">
+                </div>
+            </div>
             <h4>Détail des chambres</h4>
             <table>
             <tr><th>Chambre</th><th>Etage</th><th>Max personnes</th><th>Occupant1</th><th>Occupant2</th><th>Occupant3</th><th>Occupant4</th></tr>
